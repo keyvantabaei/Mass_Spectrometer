@@ -1,0 +1,31 @@
+/run/initialize
+/control/verbose  0
+/run/verbose 0
+/event/verbose    0
+/tracking/verbose 0
+
+##########################   Electron Beam ######################
+
+
+    ################################################
+    ###-------->   intensity
+    ################################################
+
+
+    /gps/particle e-
+    /gps/ene/type Mono
+    /gps/ene/mono 0.000005392 MeV
+
+    /gps/pos/type Plane
+    /gps/pos/shape Rectangle
+    /gps/pos/centre 0. 30. -80. cm
+    /gps/pos/rot1 0 0 1
+    /gps/pos/rot2 1 0 0
+    /gps/pos/halfy 1. cm
+    /gps/pos/halfx 1. cm
+
+    /gps/direction 0 -1 0
+
+  
+
+

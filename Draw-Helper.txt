@@ -1,0 +1,12 @@
+TO Drawing Histogram:
+
+root
+TFile f("R.root")
+TH1D* histo = "histogram name"
+histo->Draw()
+
+To Drawing Ntuple:
+root
+TFile f("R.root")
+TTree* histo = "histogram name"
+histo->Draw("X:Y")

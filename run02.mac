@@ -1,0 +1,84 @@
+/run/initialize
+/control/verbose  0
+/run/verbose 0
+/event/verbose    0
+/tracking/verbose 0
+
+##########################   Proton - ALPHA - Positron ######################
+
+
+    ################################################
+    ###-------->   intensity
+    ################################################
+    /gps/source/intensity 1.
+    
+    #Uranium-235
+    /gps/particle ion
+    /gps/ion 92 238 1 0.
+    /gps/ene/mono 0.01 MeV
+    /gps/pos/type Point
+    #/gps/pos/shape Rectangle
+    /gps/pos/centre 0. 0. -100. cm
+    #/gps/pos/rot1 1 0 0
+    #/gps/pos/rot2 0 1 0
+    #/gps/pos/halfy 2. cm
+    #/gps/pos/halfx 2. cm
+    /gps/direction 0 0 1
+
+    ###########################################
+    #######---------> ADD PARTICLE
+    ###########################################
+    /gps/source/add 1.
+    
+    #Uranium-238
+    /gps/particle ion
+    /gps/ion 92 235 1 0.
+    /gps/ene/mono 0.01 MeV
+    /gps/pos/type Point
+    #/gps/pos/shape Rectangle
+    /gps/pos/centre 0. 0. -100. cm
+    #/gps/pos/rot1 1 0 0
+    #/gps/pos/rot2 0 1 0
+    #/gps/pos/halfy 2. cm
+    #/gps/pos/halfx 2. cm
+    /gps/direction 0 0 1
+
+    ###########################################
+    #######---------> ADD PARTICLE
+    ###########################################
+    /gps/source/add 1.
+    
+    #Iodine-135
+    /gps/particle ion
+    /gps/ion 53 135 1 0.
+    /gps/ene/mono 0.01 MeV
+    /gps/pos/type Point
+    #/gps/pos/shape Rectangle
+    /gps/pos/centre 0. 0. -100. cm
+    #/gps/pos/rot1 1 0 0
+    #/gps/pos/rot2 0 1 0
+    #/gps/pos/halfy 2. cm
+    #/gps/pos/halfx 2. cm
+    /gps/direction 0 0 1
+
+    ###########################################
+    /gps/source/add 1.
+    
+    #Iodine-131
+    /gps/particle ion
+    /gps/ion 53 131 1 0.
+    /gps/ene/mono 0.01 MeV
+    /gps/pos/type Point
+    #/gps/pos/shape Rectangle
+    /gps/pos/centre 0. 0. -100. cm
+    #/gps/pos/rot1 1 0 0
+    #/gps/pos/rot2 0 1 0
+    #/gps/pos/halfy 2. cm
+    #/gps/pos/halfx 2. cm
+    /gps/direction 0 0 1
+
+
+
+    /run/beamOn 90
+
+
